@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_qrgen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.vetealinfierno.locus.QRGenActivity">
+
+    <Button
+        android:id="@+id/map2_btn"
+        style="@android:style/Widget.Holo.Button.Toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/wallet_link_text_light"
+        android:onClick="switchToMap"
+        android:text="@string/btn_map_text"
+        android:layout_marginStart="21dp"
+        android:layout_alignBaseline="@+id/mem3_btn"
+        android:layout_alignBottom="@+id/mem3_btn"
+        android:layout_toEndOf="@+id/mem3_btn" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="155dp"
+        android:background="@android:color/black"
+        android:id="@+id/view"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/view"
+        android:layout_alignParentStart="true"
+        android:layout_height="275dp"
+        android:id="@+id/linearLayout">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/image"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/groupID_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="20sp"
+        android:text="@string/print_groupID_text"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:text="@string/title_groupIDGenerator_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="30sp"
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/home_btn"
+        style="@android:style/Widget.Holo.Button.Toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:onClick="homeBtnClick"
+        android:text="@string/btn_home_text"
+        android:layout_alignBaseline="@+id/mem3_btn"
+        android:layout_alignBottom="@+id/mem3_btn"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/mem3_btn"
+        style="@android:style/Widget.Holo.Button.Toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:onClick="switchToMemActivity"
+        android:text="@string/btn_members_text"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/textView4"
+        android:layout_toEndOf="@+id/home_btn"
+        android:layout_marginStart="18dp" />
+
+</RelativeLayout>

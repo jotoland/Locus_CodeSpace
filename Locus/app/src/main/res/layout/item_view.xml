@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        app:srcCompat="@drawable/ic_audiotrack_light"
+        android:id="@+id/item_Icon"
+
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="userStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_userStatus"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/item_Icon"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/item_LastSeen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_Icon"
+        android:layout_alignStart="@+id/item_userStatus"
+        android:text="lastSeenTime" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@+id/item_LastSeen"
+        android:background="@color/colorDrkGreen" />
+
+</RelativeLayout>
